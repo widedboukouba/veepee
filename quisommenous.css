@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans&family=Lato&family=Rubik&family=Tilt+Prism&family=Ubuntu&display=swap');
+/* Define your custom colors as variables */
+:root {
+  --main-color: rgb(237, 43, 153); /* Main color */
+  --background-color: rgba(245, 244, 250, 1); /* Background color */
+}
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu";
+
+
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(250, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+   position: fixed; /* Fixe la barre de navigation en haut de la page */
+    top: 0; /* Aligne la barre de navigation en haut de la page */
+    left: 0; /* Aligne la barre de navigation tout à gauche */
+    width: 100%; /* Prend toute la largeur de l'écran */
+     /* Couleur de fond de la barre de navigation */
+    padding: 10px 0; /* Espacement interne en haut et en bas de la barre de navigation */
+    z-index: 1000; /* Assure que la barre de navigation apparaît au-dessus du contenu lors du défilement */
+}
+.logo{
+   
+    width: 150px;
+    height: auto;
+ 
+}
+.logodiv
+{  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 450px;
+}
+.navleftside{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1; 
+    margin-right: 20px;
+}
+.pinkbutton{
+    background-color: var(--main-color); /* Use the variable here */
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 140px;
+    height: 40px;
+    font-family: "Inclusive Sans";
+    border-radius: 2px;
+    border: none;
+    margin-left: 10px;
+}
+.pinkbutton:hover {
+    background-color: rgb(252, 248, 251);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+  }
+.whitebutton{
+    background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 140px;
+  height: 40px;
+  font-family: "Inclusive Sans";
+  border-radius: 2px;
+}
+.whitebutton:hover {
+    background-color: var(--main-color); /* Use the variable here */
+    color: white;
+    border: none;
+  }
+
+
+header{
+    position: relative;
+    width: 100vw;
+    height:700px;
+    background-image: url(https://media.veepee.com/v1/media/48cb15cc-1059-44f5-97a0-f2f7b211d9b4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headercontainer{
+   line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 6rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.paragraf{
+    line-height: 20px;
+    width: 580px;
+    margin-top: 10px;
+}
+.titre{
+    letter-spacing: 1px;
+}
+
+main{
+ 
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+
+
+  
+
+  
+
+  
+  .container {
+    background-color: #fcf8f8d4;
+   width: 900px;
+    color: rgba(10, 10, 10, 0.83);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+  }
+  
+  .content-container {
+    margin-left: 50px;
+  }
+  
+  .movie-list-container {
+    padding: 0 20px;
+  }
+  
+  .movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 200px;
+    height: 100%;
+   
+  
+  }
+.movie-list-title{
+    line-height: 50px;
+}
+.patagrafitem {
+    width: 350px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+  
+
+
+  
+  .arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+.bodymain{
+    display: block;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    margin: 70px 30px 30px 250px;
+    width: 800px;
+
+}
+.bodymaincontainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    align-items: center;
+
+}
+.leftcontainer {
+    width: 500px;
+    text-align: start;
+}
+.rightside{
+    margin-top: -50px;
+    color: rgba(0, 0, 0, 0.848);
+    line-height: 80px;
+    
+}
+.containerpara {
+    margin-left: 90px;
+    font-size: 18px;
+    line-height: 20px;
+}
+#second{
+    margin-top: 20px;
+}
+  
+  
+
+
+
+
+
+
+
+
+
+.containerr {
+    
+    color: rgba(10, 10, 10, 0.784);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+   width: 100%;
+   padding: 50px 150px  150px;
+  }
+.patagrafitemm {
+    width: 500px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+  
+  .movie-list-containerr {
+    padding: 0 20px;
+  }
+  
+  .movie-list-wrapperr {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #movie-listt {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  #movie-list-itemm {
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  #movie-list-item-imgg {
+    transition: all 1s ease-in-out;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+   
+  
+  }
+.movie-list-titlee{
+    line-height: 40px;
+}
+
+
+  
+
+
+  
+  .arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+
+
+.maintow{
+  height: 450px;
+  position: relative;
+    background-image: url(https://media.veepee.com/v1/media/d6016144-066a-4916-9cea-bf7224950a33);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    width: 100vw;
+}
+
+
+
+.maintowcontainer{
+box-sizing: border-box;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 100px 50px 50px 250px;
+  margin-right: 50px;
+  line-height: 30px;
+
+}
+.maintowcontainerp{
+  width: 320px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+.maintoww{
+  height: 400px;
+  position: relative;
+    background-image: url(https://media.veepee.com/v1/media/192ccd22-e394-4190-acdb-08a3e2c6574c
+    );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    width: 100vw;
+}
+.maintowcontainerrp{
+  width: 320px;
+  line-height: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.maintowcontainerrh{
+ letter-spacing: 1px;
+  font-size: 24px;
+}
+.whitecontainerbody{
+  height: 200px;
+  line-height: 30px;
+  margin: 100px;
+
+}
+.whitecontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: start;
+ 
+
+}
+.rowdic{
+  display: flex;
+}
+.rowdicp {
+  margin-top: 10px;
+  width: 200px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.imgrow {
+  margin-top: -8px;
+  margin-right: 20px;
+  width: 40px;
+}
+.whitetitle {
+  margin: 50px;
+  padding-left: 60px;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footerheader {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .footerheader{
+    display: none;
+    }
+  }
+  
+  .rightsidefooter {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .leftsidefooter {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  
+  .footerbody {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .footer-section {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .footer-section h3 {
+    margin-right: 97px;
+  }
+  
+  .footer-section ul {
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .footersocial {
+    padding-left: 30px;
+  }
+  .footersocial:hover{
+    color: rgba(232, 30, 144, 0.722);
+  }
+  
+  .footerbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  
+  li,
+  ul {
+    text-align: left;
+  }
+  
+  .footericon {
+    margin: 5px;
+    width: 44px;
+    height: 40px;
+  }
+  
+  .footercollaborators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .collabimg {
+    max-width: 200px;
+    max-height: 70px;
+    min-height: 50px;
+    min-width: 50px;
+    padding-left: 20px;
+  }
+  .dropdown {
+    display: flex;
+    align-self: flex-end;
+    }
+    
+    #country-select {
+      padding: 5px;
+      font-size: 20px;
+    }
+    
+    .flag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      pointer-events: none;
+      font-weight: bold;
+    }
+    
+    #selected-flag {
+      width: 40px; /* Largeur des icônes de drapeau */
+      height: auto;
+    }
+    
+    .ends {
+      text-align: end;
+      margin-right: 190px;
+    }
+    
+    .endsimg {
+      max-width: 200px;
+      max-height: 100px;
+      min-height: 50px;
+      min-width: 50px;
+    }
+    
+    .hrfooter {
+      margin-top: 5px;
+      height: 5px;
+      font-weight: bold;
+      background-color: var(--main-color); /* Use the variable here */
+      border: none;
+    }
+    
+    .footer-section li:hover {
+      cursor: pointer;
+      color: var(--main-color); /* Use the variable here */
+    }
+    
+    .footer-section p:hover {
+      color: var(--main-color); /* Use the variable here */
+    }
+    
+    h1:visited {
+      color:black; /* Text color on click */
+    }
+    li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+      }  
