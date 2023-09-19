@@ -15,18 +15,10 @@
 
 body {
   font-family: "Ubuntu";
+
 }
 
-/* Header styles */
-header {
-  display: flex;
-  justify-content: center;
-  top: 0;
-  height: 70vh;
-  width: 100%;
-  background-size: cover;
-  background-image: url(https://media.veepee.com/v1/media/ece1b44c-2e9a-4663-a99e-793e83fe1b6f);
-}
+
 
 .headertopp {
   position: fixed;
@@ -338,27 +330,72 @@ li {
   /* margin-top: 10px; */
   background-color: white;
 }
-
+.ahreff{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.ahref{
+    color: var(--main-color);
+    text-align: end;
+    margin-left: 190px;
+}
+.leftfive{
+    margin-left: 310px;
+}
+.hr1{
+    margin-top: 20px;
+    width: 500px;
+    border: 0.25px solid rgba(236, 232, 232, 0.74);
+}
 .navlinkss {
   margin-top: 14px;
   margin-bottom: 14px;
 }
-.container {
-  display: block;
+.green {
+    color: rgb(51, 194, 87);
 }
-.card {
-  position: static;
-  width: 436px;
-  height: 220px;
-  border-radius: 6px;
-  padding: 15px 30px 20px;
-  margin: calc(120px + 2rem) 2rem;
-  border-bottom: none;
-  box-shadow: rgba(34, 34, 43, 0.16) 0px 3px 11px;
-  background-color: white;
-  margin-right: 700px;
+.product-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    padding: 20px;
+    width: 550px;
+    border-radius: 5px;
+    height: 325px;
 }
 
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-self: baseline;
+}
+
+.product-card h2 {
+    margin-top: 10px;
+}
+
+.product-card button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 450px;
+    font-size: 18px;
+    justify-content: center;
+    align-self: center;
+    margin-left: 35px;
+    line-height: 30px;
+}
+
+.product-card button:hover {
+    background-color: rgba(241, 47, 170, 0.864);
+}
+.product-cardd{
+    width: 550px;
+}
 h1 {
   display: block;
   font-size: 1.5em;
@@ -381,25 +418,73 @@ p {
   color: rgba(44, 43, 43, 0.887);
   margin-bottom: 30px;
 }
-.cardbutton {
-  border-radius: 2px;
-  border: 1px solid rgb(236, 0, 140);
-  outline: 0px;
-  overflow: hidden;
-  padding: 0.25rem 2rem;
-  height: 2.5rem;
-  font-family: "Ubuntu";
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 23px;
-  white-space: nowrap;
-  cursor: pointer;
-  transition-property: background-color, border-color, color;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
-  background-color: rgb(236, 0, 140);
-  color: rgb(255, 255, 255);
+g{
+    line-height: 40px;
 }
+.greyp{
+    color: rgba(128, 128, 128, 0.93);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 20px;
+}
+.pinkp{
+    color:var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+    
+}
+.greenspan{
+    background-color: rgb(45, 179, 85);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 5px;
+}
+h4{
+    align-items: start;
+}
+.blackp {
+    line-height: -1px;
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+.ahreffh
+{   color: var(--main-color);
+    text-align: center;
+    text-decoration: underline;
+  margin-left: 180px;
+ line-height: 30px;
+   
+}
+.model{
+    height: 150px;
+    border-radius: 5px;
+}
+main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   display: block;
   background-color: white;
@@ -452,4 +537,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
 }
