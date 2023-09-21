@@ -42,7 +42,15 @@ body {
   justify-content: space-between;
   padding: 12px 20px;
 }
-
+a:visited{
+  color: #000;
+}
+a{
+  color: #0b0b0b;
+}
+a:active{
+  color: #000;
+}
 .tooltip {
   position: relative;
   display: inline-block;
