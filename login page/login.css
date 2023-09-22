@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans&family=Lato&family=Rubik&family=Tilt+Prism&family=Ubuntu&display=swap");
+/* Define your custom colors as variables */
+:root {
+  --main-color: rgb(237, 43, 153); /* Main color */
+  --background-color: rgba(245, 244, 250, 1); /* Background color */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    font-family: "Ubuntu";
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../assets/baaack.jpg);
+  }
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.5s ease;
+}
+a:hover {
+  color: var(--main-color);
+}
+
+.form {
+  background:var(--background-color);
+  padding: 40px;
+  width: 400px;
+  height: 500px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 50 0px 0;
+  justify-content: space-around;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  height: 45px;
+ margin-left: 40px;
+ 
+}
+.tab-group li a:hover {
+  background:var(--main-color);
+  color: #f6efef;
+}
+.tab-group .active a {
+  background: var(--main-color);
+  color: #f3eded;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 300;
+
+}
+
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(11, 11, 11, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 18px;
+}
+.Log{
+    margin-left: 250px;
+    margin-top: -20px;
+}
+label .req {
+  margin: 2px;
+  color: var(--main-color);
+}
+
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: white;
+}
+
+input,
+textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: rgba(43, 42, 42, 0.911);
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 10px;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-color: var(--main-color);
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+ 
+  border-radius: 10px;
+  font-weight: 600;
+ font-size: 18px;
+  width: 20px;
+  height: 50px;
+  margin-left: 60px;
+  background: var(--main-color);
+  color: #ffffff;
+  transition: all 0.5s ease;
+ 
+}
+.button:hover, .button:focus {
+  background: var(--main-color);
+}
+
+.button-block {
+  display: block;
+  width: 200px;
+  justify-content: center;
+  align-self: center;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
