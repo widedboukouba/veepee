@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans&family=Lato&family=Rubik&family=Tilt+Prism&family=Ubuntu&display=swap");
 /* Define your custom colors as variables */
 :root {
   --main-color: rgb(237, 43, 153); /* Main color */
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Ubuntu";
 }
 
 /* Header styles */
