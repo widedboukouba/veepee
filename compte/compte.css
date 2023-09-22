@@ -424,10 +424,7 @@ strong{
     height: 21px;
     background: center center no-repeat;
 }
-a {
-    text-decoration: underline;
-    color: #ec008c;
-}
+
 .clear {
     font-size: 1px;
     line-height: 1px;
