@@ -113,9 +113,10 @@ a:active{
     text-decoration: underline;
 }
 .ahref{
-    color: var(--main-color);
+   
     text-align: end;
-    margin-left: 190px;
+    margin-left: 290px;
+    color: var(--main-color) !important;
 }
 .leftfive{
     margin-left: 310px;
@@ -256,8 +257,23 @@ h4{
     border-radius: 5px;
 }
 
+.coord{
+    margin-left: 35px;
+}
 
-
+.midelcart {
+    width: 400px;
+    height: 100px;
+    border: 1px solid var(--main-color) !important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+     
+}
 
 
 
