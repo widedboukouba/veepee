@@ -360,7 +360,7 @@ main {
     height: auto;
     width: 800px;
     background-color: rgba(255, 255, 255, 0.913);
-   margin-left: 250px;
+   margin-left: 150px;
 }
 h2{
     color: var(--main-color);
@@ -372,6 +372,71 @@ h4{
     color: white;
     background-color: var(--main-color);
     padding: 5px;
+    width: 600px;
+}
+i{
+    color: rgba(86, 84, 84, 0.879);
+    font-size: 14px;
+}
+.tableBloc {
+    margin: 0 0 10px;
+    padding: 10px;
+    background: #fff;
+}
+.tableBloc1 {
+    width: 150px;
+}
+.tableBloc1, .tableBloc2, .tableBloc3, .actionBloc {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px 10px 10px 0;
+}
+.tableBloc2 {
+    width: 180px;
+    color: #0b0b0bd2;
+}
+.tableBloc3 {
+    color: #0b0b0bcf;
+    width: 200px;
+}
+strong{
+    color: #363333d2;
+}
+.actionBloc {
+    vertical-align: middle;
+    padding: 2px 0;
+    width: 90px;
+    text-align: center;
+    border-left: 1px solid #cecece;
+}
+.actionBloc a:first-child {
+    margin-left: 0;
+}
+.actionBloc .edit {
+    background-image: url(../img/acc_table-changeLine.png);
+}
+.actionBloc .edit, .actionBloc .del {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -5000px;
+    margin-left: 5px;
+    width: 21px;
+    height: 21px;
+    background: center center no-repeat;
+}
+a {
+    text-decoration: underline;
+    color: #ec008c;
+}
+.clear {
+    font-size: 1px;
+    line-height: 1px;
+    visibility: hidden;
+    clear: both;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 
