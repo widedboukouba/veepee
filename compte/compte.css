@@ -443,7 +443,7 @@ h3{
     color: var(--main-color);
 }
 footer{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .footerheader {
     display: flex;
@@ -453,11 +453,7 @@ footer{
    
   }
   
-  @media (max-width: 768px) {
-    .footerheader {
-      display: none;
-    }
-  }
+ 
   
   .rightsidefooter {
     display: flex;
@@ -498,6 +494,7 @@ footer{
   .footer-section ul {
     flex-direction: column;
     display: flex;
+    flex-wrap: wrap;
   }
   
   .footersocial {
@@ -595,3 +592,91 @@ footer{
     color: black; /* Text color on click */
   }
   
+
+
+  /************************responsive*********************************/
+
+ /*tablette responsive*/
+
+ @media  (max-width: 800px) and (min-width: 640px){
+  .footerheader {
+    display: none;
+  }
+  .navbarr{
+    display: none;
+  }
+  .iconsnav{
+    display: none;
+  }
+  .navbaritems{
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  main{
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  .buttonn{
+    margin-top: -5px;
+  } 
+  .comptpara{
+    width: 90vw;
+  }
+
+
+
+ }
+
+
+ /***************************************************************/
+
+ /*mobile responsive*/
+ @media  (max-width: 641px)  {
+  .navbarr{
+    display: none;
+  }
+  .iconsnav{
+    display: none;
+  }
+  .navbaritems{
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  main{
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  .buttonn{
+    margin-top: -5px;
+  } 
+  .comptpara{
+    width: 90vw;
+  }
+  h4{
+    width: 100%;
+  }
+  .veeplogoo{
+    display: none;
+  }
+  .actionBloc{
+    padding-left: 15px;
+  }
+  .footerheader {
+    display: none;
+  }
+  .footerbody{
+    padding: 0 20 0 20;
+    display: flex;
+    font-size: 18px;
+
+    
+  }
+ 
+  
+ }
