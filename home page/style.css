@@ -300,12 +300,12 @@ li {
 
 .titels:hover {
   padding-bottom: 18px;
-  border-radius: 3px;
+
 }
 
 .titleunderline {
   padding-bottom: 18px;
-  border-radius: 3px;
+  
 }
 
 .navp {
@@ -358,9 +358,11 @@ li {
   align-items: center;
   height: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .search {
-    display: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    /* display: none; */
   }
 }
 
@@ -659,18 +661,22 @@ q {
   background-image: url(https://media.veepee.com/v1/media/acd55ab1-f623-4434-bf0c-b2017b56175b);
 }
 
+/*footer*/
+h3{
+  color: var(--main-color);
+}
+footer{
+  margin-top: 100px;
+}
 .footerheader {
   display: flex;
   justify-content: space-between;
   flex: 1;
   padding: 20px;
+ 
 }
 
-@media (max-width: 768px) {
-  .footerheader {
-    display: none;
-  }
-}
+
 
 .rightsidefooter {
   display: flex;
@@ -678,7 +684,11 @@ q {
   padding: 10px;
   flex: 1;
 }
-
+li {
+list-style: none;
+display: inline;
+padding: 10px;
+}
 .leftsidefooter {
   display: flex;
   justify-content: flex-end;
@@ -707,6 +717,7 @@ q {
 .footer-section ul {
   flex-direction: column;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footersocial {
@@ -741,7 +752,7 @@ ul {
 }
 
 .collabimg {
-  max-width: 200px;
+  max-width: 150px;
   max-height: 70px;
   min-height: 50px;
   min-width: 50px;
@@ -777,7 +788,7 @@ ul {
 }
 
 .endsimg {
-  max-width: 200px;
+  max-width: 150px;
   max-height: 100px;
   min-height: 50px;
   min-width: 50px;
@@ -803,3 +814,80 @@ ul {
 h1:visited {
   color: black; /* Text color on click */
 }
+.titlecontainer
+{
+  margin-top: -378px;
+}
+
+
+
+
+
+
+
+
+
+
+ /************************responsive*********************************/
+
+ /*tablette responsive*/
+
+ @media  (max-width: 800px) and (min-width: 640px){
+  .footerheader {
+    display: none;
+  }
+  .headertop{
+    padding-top: 10px;
+  }
+  li, ul{
+    text-align: center;
+    margin-top: 5px;
+  }
+  /* .navp{
+    margin-left: 10px;
+    margin: 0px;
+  } */
+  .dot-container{
+    margin-top: 10px;
+  }
+
+
+ }
+
+
+ /***************************************************************/
+
+ /*mobile responsive*/
+ @media  (max-width: 770px)  {
+ 
+  .footerheader {
+    display: none;
+  }
+  .footerbody{
+    padding: 0 20 0 20;
+    display: flex;
+    font-size: 18px; 
+  }
+  .headertop{
+    width: 100%;
+    margin: 0;
+    padding: 0
+  }
+  .navbar{
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    
+  }
+  .button {
+    width: 90px;
+    height: 30px;
+    margin-left: -400px;
+  }
+  
+  .dot-container{
+    margin-top: 20px;
+  }
+  
+ }
