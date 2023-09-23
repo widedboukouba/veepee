@@ -265,7 +265,7 @@ header {
 
 .left {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   justify-content: flex-end;
 }
 @media (max-width: 768px) {

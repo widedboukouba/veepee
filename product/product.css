@@ -452,19 +452,19 @@ input[type=text] {
 
 
 main{
-  width: 100%;
+   width: 100%;
 
-  margin: 50px 50px 50px
+ margin-top: 50px ;
 }
 .flex-box{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
    align-self: center;
    margin-left: 100px;
    
 }
 .flex-boxx{
-  width: 100vw;
+  /* width: 100vw; */
  
  
 }
@@ -708,151 +708,162 @@ a:visited{
 
 
 
+/*footer*/
+h3{
+  color: var(--main-color);
+}
+footer{
+  margin-top: 100px;
+}
 .footerheader {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    padding: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .footerheader {
-      display: none;
-    }
-  }
-  
-  .rightsidefooter {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    flex: 1;
-  }
-  
-  .leftsidefooter {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-  
-  .footerbody {
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-  }
-  
-  .footer-section {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  
-  .footer-section h3 {
-    margin-right: 97px;
-  }
-  
-  .footer-section ul {
-    flex-direction: column;
-    display: flex;
-  }
-  
-  .footersocial {
-    padding-left: 30px;
-  }
-  .footersocial:hover {
-    color: rgba(232, 30, 144, 0.722);
-  }
-  
-  .footerbottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px;
-  }
-  
-  li,
-  ul {
-    text-align: left;
-  }
-  
-  .footericon {
-    margin: 5px;
-    width: 44px;
-    height: 40px;
-  }
-  
-  .footercollaborators {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .collabimg {
-    max-width: 200px;
-    max-height: 70px;
-    min-height: 50px;
-    min-width: 50px;
-    padding-left: 20px;
-  }
-  
-  .dropdown {
-    display: flex;
-    align-self: flex-end;
-  }
-  
-  #country-select {
-    padding: 5px;
-    font-size: 20px;
-  }
-  
-  .flag {
-    position: absolute;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-    font-weight: bold;
-  }
-  
-  #selected-flag {
-    width: 40px; /* Largeur des icônes de drapeau */
-    height: auto;
-  }
-  
-  .ends {
-    text-align: end;
-    margin-right: 190px;
-  }
-  
-  .endsimg {
-    max-width: 200px;
-    max-height: 100px;
-    min-height: 50px;
-    min-width: 50px;
-  }
-  
-  .hrfooter {
-    margin-top: 5px;
-    height: 5px;
-    font-weight: bold;
-    background-color: var(--main-color); /* Use the variable here */
-    border: none;
-  }
-  
-  .footer-section li:hover {
-    cursor: pointer;
-    color: var(--main-color); /* Use the variable here */
-  }
-  
-  .footer-section p:hover {
-    color: var(--main-color); /* Use the variable here */
-  }
-  
-  h1:visited {
-    color: black; /* Text color on click */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 20px;
+ 
+}
+
+
+
+.rightsidefooter {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  flex: 1;
+}
+li {
+list-style: none;
+display: inline;
+padding: 10px;
+}
+.leftsidefooter {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.footerbody {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-section {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-right: 97px;
+}
+
+.footer-section ul {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footersocial {
+  padding-left: 30px;
+}
+.footersocial:hover {
+  color: rgba(232, 30, 144, 0.722);
+}
+
+.footerbottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+li,
+ul {
+  text-align: left;
+}
+
+.footericon {
+  margin: 5px;
+  width: 44px;
+  height: 40px;
+}
+
+.footercollaborators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.collabimg {
+  max-width: 150px;
+  max-height: 70px;
+  min-height: 50px;
+  min-width: 50px;
+  padding-left: 20px;
+}
+
+.dropdown {
+  display: flex;
+  align-self: flex-end;
+}
+
+#country-select {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+#selected-flag {
+  width: 40px; /* Largeur des icônes de drapeau */
+  height: auto;
+}
+
+.ends {
+  text-align: end;
+  margin-right: 190px;
+}
+
+.endsimg {
+  max-width: 150px;
+  max-height: 100px;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.hrfooter {
+  margin-top: 5px;
+  height: 5px;
+  font-weight: bold;
+  background-color: var(--main-color); /* Use the variable here */
+  border: none;
+}
+
+.footer-section li:hover {
+  cursor: pointer;
+  color: var(--main-color); /* Use the variable here */
+}
+
+.footer-section p:hover {
+  color: var(--main-color); /* Use the variable here */
+}
+
+h1:visited {
+  color: black; /* Text color on click */
+}
+
+
+
 
 
 
@@ -863,7 +874,7 @@ a:visited{
 
  /*tablette responsive*/
 
- @media  (max-width: 1000px) and (min-width: 640px){
+ @media  (max-width: 1123px) and (min-width: 940px){
   .footerheader {
     display: none;
   }
@@ -883,14 +894,12 @@ a:visited{
   }
 
 
-   .flex-box{
-    /* display: flex;
-    flex-wrap: wrap; */
-    margin-left: 0;
-   }
+  
    .right{
-    margin-left: 0;
-
+    margin-left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
    }
    .big-img{
     width: 162px;
@@ -924,13 +933,37 @@ a:visited{
     font-size: 10px;
     
    }
+   .veeplogoo{
+    display: none;
+   }
+   .headercontainertop{
+    width: 100%;
+   }
+   .main {
+    width: 100vw;
+    margin: 10px;
+    padding: 10px;
+   }
+  
+   
+   h1{
+    display: none;
+   }
+   .imagess{
+    display: none;
+   }
+   /* .drop{
+    margin-right: 30px;
+   } */
+  
+   
  }
 
 
  /***************************************************************/
 
- /*mobile responsive*/
- @media  (max-width: 770px)  {
+ /*second tablet  responsive*/
+ @media  (max-width: 941px)   {
  
   .footerheader {
     display: none;
@@ -961,14 +994,68 @@ a:visited{
   .dot-container{
     margin-top: 20px;
   }
+  .right{
+    margin-left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-right: 50px;
+   }
+   .big-img{
+    width: 162px;
+   }
+   .small-img{
+  width: 45px;
+   }
+   .images{
+    margin-top: 0;
+  
+   }
+   .pname{
+    font-size: 14px;
+   }
+   .pinkp{
+    font-size: 14px;
+    margin-right: 0px;
+   }
+   .greyp{
+    font-size: 14px;
+   }
+   .price{
+    margin-top: -30px;
+   }
+   .quantity p
+   {
+    font-size: 14px;
+   margin-bottom: 12px;
+   }
+   .alink {
+    font-size: 10px;
+    
+   }
+   .veeplogoo{
+    display: none;
+   }
+   .headercontainertop{
+    width: 100%;
+   }
+   .main {
+    width: 100vw;
+    margin: 10px;
+    padding: 10px;
+   }
+  
+   
+   h1{
+    display: none;
+   }
+   .imagess{
+    display: none;
+   }
+   /* .drop{
+    margin-right: 30px;
+   } */
   
  }
-
-
-
-
-
-
-
-
-
+ /*******************mobile responsive********************************/
+ 

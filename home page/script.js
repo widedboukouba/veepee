@@ -135,7 +135,7 @@ function handleScroll() {
     humbergerText[0].style.color = "#333";
     navp[0].style.color = "#333";
     navContainer.style.color = "#000";
-    butterfly.src = "assets/midlelogo.jpg";
+    butterfly.src = "../assets/midlelogo.jpg";
     butterfly.style.filter = "none";
     // searchContainerHidden[0].style.display = "flex";
     titleunderline.style.color = "#ec008c";
@@ -201,7 +201,7 @@ function handleScroll() {
 
     humbergerText[0].style.color = "white";
     navp[0].style.color = "white";
-    butterfly.src = "assets/logovente.jpg";
+    butterfly.src = "../assets/logovente.jpg";
     butterfly.style.filter = "none";
     navContainer.style.color = "white";
     // searchContainerHidden[0].style.display = "none";
