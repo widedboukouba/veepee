@@ -57,25 +57,15 @@ header {
   justify-content: space-between;
   padding: 12px 20px;
 }
-@media (max-width: 768px) {
-  .headercontainertop {
-    justify-content: space-between;
-    display: flex;
-  }
-}
 
 .logo {
   width: 150px;
 
   height: 150px;
   align-self: center;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
-@media (max-width: 768px) {
-  .logo {
-    width: 70%;
-  }
-}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -265,7 +255,7 @@ header {
 
 .left {
   display: flex;
-  /* flex: 1; */
+  flex: 1;
   justify-content: flex-end;
 }
 @media (max-width: 768px) {
@@ -300,12 +290,10 @@ li {
 
 .titels:hover {
   padding-bottom: 18px;
-
 }
 
 .titleunderline {
   padding-bottom: 18px;
-  
 }
 
 .navp {
@@ -330,12 +318,7 @@ li {
 .veeplogo {
   display: flex;
   flex: 1;
-}
-@media (max-width: 768px) {
-  .veeplogo {
-    align-self: center;
-    margin-left: 93px;
-  }
+  justify-content: center;
 }
 
 .icon {
@@ -662,10 +645,10 @@ q {
 }
 
 /*footer*/
-h3{
+h3 {
   color: var(--main-color);
 }
-footer{
+footer {
   margin-top: 100px;
 }
 .footerheader {
@@ -673,10 +656,7 @@ footer{
   justify-content: space-between;
   flex: 1;
   padding: 20px;
- 
 }
-
-
 
 .rightsidefooter {
   display: flex;
@@ -685,9 +665,9 @@ footer{
   flex: 1;
 }
 li {
-list-style: none;
-display: inline;
-padding: 10px;
+  list-style: none;
+  display: inline;
+  padding: 10px 0px;
 }
 .leftsidefooter {
   display: flex;
@@ -707,11 +687,11 @@ padding: 10px;
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-section h3 {
-  margin-right: 97px;
+  /* margin-right: 97px; */
 }
 
 .footer-section ul {
@@ -814,80 +794,132 @@ ul {
 h1:visited {
   color: black; /* Text color on click */
 }
-.titlecontainer
-{
+.titlecontainer {
   margin-top: -378px;
 }
 
+/************************responsive*********************************/
 
+/*tablette responsive*/
 
-
-
-
-
-
-
-
- /************************responsive*********************************/
-
- /*tablette responsive*/
-
- @media  (max-width: 1000px) and (min-width: 640px){
+@media (max-width: 1000px) and (min-width: 640px) {
   .footerheader {
     display: none;
   }
-  .headertop{
+  .headertop {
     padding-top: 10px;
   }
-  li, ul{
+  /* li,
+  ul {
     text-align: center;
     margin-top: 5px;
-  }
+  } */
   /* .navp{
     margin-left: 10px;
     margin: 0px;
   } */
-  .dot-container{
+  .dot-container {
     margin-top: 10px;
   }
+}
 
+/***************************************************************/
 
- }
-
-
- /***************************************************************/
-
- /*mobile responsive*/
- @media  (max-width: 770px)  {
- 
-  .footerheader {
-    display: none;
-  }
-  .footerbody{
-    padding: 0 20 0 20;
-    display: flex;
-    font-size: 18px; 
-  }
-  .headertop{
-    width: 100%;
-    margin: 0;
-    padding: 0
-  }
-  .navbar{
+/*mobile responsive*/
+@media (max-width: 770px) {
+  .navbar {
     width: 100%;
     margin: 0;
     padding: 8px;
     text-align: center;
-    
   }
+
+  .veeplogo {
+  }
+
+  .logo {
+    transform: translateX(20px);
+    width: 80px;
+    height: auto;
+  }
+
   .button {
-    width: 90px;
-    height: 30px;
-    margin-left: -400px;
+    /* width: 90px; */
+    font-size: 12px;
   }
-  
-  .dot-container{
+
+  .navlinks > ul {
+    display: flex;
+    width: 95vw;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+  }
+
+  .navlinks a {
+    white-space: nowrap;
+  }
+
+  .headertop {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headercontainertop {
+    padding: 8px;
+  }
+
+  .hamburger {
+    padding-bottom: 0px;
+    transform: translateX(10px);
+  }
+
+  .humberger-text {
+    display: none;
+  }
+
+  .dot-container {
     margin-top: 20px;
   }
-  
- }
+
+  .titlecontainer {
+    padding: 30px 20px;
+  }
+
+  .containertitle {
+    color: rgb(70, 70, 80);
+  }
+  .containerparagraphe {
+    color: rgb(70, 70, 80);
+  }
+
+  header {
+    background-position: center;
+    height: 90vh;
+  }
+
+  .search {
+    width: 90%;
+    margin: 0px;
+  }
+
+  .card img {
+    max-width: unset;
+    min-width: unset;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .footerheader {
+    display: none;
+  }
+  .footerbody {
+    padding: 0 20 0 20;
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
