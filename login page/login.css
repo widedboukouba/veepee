@@ -40,7 +40,7 @@ a:hover {
   background:var(--background-color);
   padding: 40px;
   width: 400px;
-  height: 500px;
+  height: 510px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -52,6 +52,7 @@ a:hover {
   margin: 0 50 0px 0;
   justify-content: space-around;
 }
+
 .tab-group:after {
   content: "";
   display: table;
@@ -74,6 +75,7 @@ a:hover {
  margin-left: 40px;
  
 }
+
 .tab-group li a:hover {
   background:var(--main-color);
   color: #f6efef;
@@ -93,6 +95,9 @@ h2 {
   font-weight: 300;
 
 }
+
+
+
 
 label {
   position: absolute;
@@ -200,3 +205,133 @@ textarea {
   margin-top: -20px;
   text-align: right;
 }
+
+
+/************************responsive*********************************/
+
+ /*tablette responsive*/
+
+ @media  (max-width: 800px) and (min-width: 640px){
+  body{
+    background-image: none;
+   }
+  .form{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+   }
+   .tab-group {
+    list-style: none;
+    padding: 0px;
+   margin-left: 180px;
+   margin-top: -50px;
+    justify-content: space-around;
+  }
+  .tab-group li a{
+   width: 100px;
+    }
+    .images{
+      padding-bottom: 20px;
+      
+    }
+   
+  h2{
+    text-align: start;
+   
+     }
+  #fbimg{
+ 
+    margin-left:66px;
+
+  }
+  .gogle{
+ 
+   width: 50px;
+   margin-top: 0px;
+
+  }
+  .ends{
+    display: none;
+  
+   }
+   .button {
+  
+    width: 320px;
+    height: 50px;
+    align-self: center;
+    margin-left: 0px;
+   
+   
+  }
+  .button-block {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+  }
+  .end{
+    margin-top: 50px;
+    margin-left: -50px;
+  }
+ }
+
+
+
+  /***************************************************************/
+
+ /*mobile responsive*/
+ @media  (max-width: 641px) {
+  body{
+    background-image: none;
+   }
+  .form{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+  .tab-group{
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+   }
+  .tab-group a{
+    align-self: flex-start;
+     margin: 10px;
+  
+    }
+  h2{
+    text-align: start;
+   
+     }
+  
+  .images{
+    margin-left: 5px;
+   
+  }
+  #fbimg{
+   margin-left:30px;
+   width: 50px;
+  }
+  .end{
+    margin-top: 50px;
+  }
+  .gogle{
+    width: 50px;
+  }
+ }
