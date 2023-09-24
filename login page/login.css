@@ -9,23 +9,24 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   overflow-y: scroll;
 }
 
-
 body {
-    display: flex;
-    justify-content: center;
-    top: 0;
-    font-family: "Ubuntu";
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-image: url(../assets/baaack.jpg);
-  }
+  display: flex;
+  justify-content: center;
+  top: 0;
+  font-family: "Ubuntu";
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../assets/baaack.jpg);
+}
 
 a {
   text-decoration: none;
@@ -37,27 +38,32 @@ a:hover {
 }
 
 .form {
-  background:var(--background-color);
+  background: var(--background-color);
   padding: 40px;
   width: 400px;
-  height: 510px;
+  height: fit-content;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 .tab-group {
+  margin: 20px auto;
   list-style: none;
   padding: 0;
   margin: 0 50 0px 0;
+  width: 100%;
+  display: flex;
   justify-content: space-around;
 }
 
+/* 
 .tab-group:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
+
 .tab-group li a {
   display: block;
   text-decoration: none;
@@ -72,12 +78,10 @@ a:hover {
   transition: 0.5s ease;
   border-radius: 10px;
   height: 45px;
- margin-left: 40px;
- 
 }
 
 .tab-group li a:hover {
-  background:var(--main-color);
+  background: var(--main-color);
   color: #f6efef;
 }
 .tab-group .active a {
@@ -93,11 +97,7 @@ h2 {
   text-align: center;
   color: var(--main-color);
   font-weight: 300;
-
 }
-
-
-
 
 label {
   position: absolute;
@@ -109,9 +109,9 @@ label {
   pointer-events: none;
   font-size: 18px;
 }
-.Log{
-    margin-left: 250px;
-    margin-top: -20px;
+.Log {
+  margin-left: 250px;
+  margin-top: -20px;
 }
 label .req {
   margin: 2px;
@@ -176,21 +176,33 @@ textarea {
   margin: 0;
 }
 
+.images {
+  margin-top: 20px;
+}
+
+.images ul {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+  gap: 20px;
+}
+
 .button {
   border: 0;
- 
+
   border-radius: 10px;
   font-weight: 600;
- font-size: 18px;
+  font-size: 18px;
   width: 20px;
   height: 50px;
   margin-left: 60px;
   background: var(--main-color);
   color: #ffffff;
   transition: all 0.5s ease;
- 
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background: var(--main-color);
 }
 
@@ -206,70 +218,86 @@ textarea {
   text-align: right;
 }
 
+.end {
+  margin-top: 30px;
+}
+
+.end ul {
+  /* margin: 0px; */
+  padding: 0px;
+}
+
+.end-ou {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line-under {
+  width: 40%;
+  border: 1px solid black;
+  height: 0px;
+}
 
 /************************responsive*********************************/
 
- /*tablette responsive*/
+/*tablette responsive*/
 
- @media  (max-width: 1000px) and (min-width: 640px){
-  body{
+@media (max-width: 1000px) and (min-width: 770px) {
+  body {
     background-image: none;
-   }
-  .form{
+  }
+  .form {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 20px;
     box-shadow: none;
     border-radius: 0;
     background-color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-   
-   }
-   .tab-group {
+    /* text-align: center; */
+  }
+  .tab-group {
     list-style: none;
     padding: 0px;
-   margin-left: 180px;
-   margin-top: -50px;
-    justify-content: space-around;
+    /* margin-left: 180px; */
+    /* margin-top: -150px; */
+    justify-content: center;
+    gap: 16px;
+    margin: 30px;
   }
-  .tab-group li a{
-   width: 100px;
-    }
-    .images{
-      padding-bottom: 20px;
-      
-    }
-   
-  h2{
-    text-align: start;
-   
-     }
-  #fbimg{
- 
-    margin-left:66px;
+  .tab-group li a {
+    width: 100px;
+  }
+  .images {
+    padding-bottom: 20px;
+  }
 
+  h2 {
+    /* text-align: start; */
+    /* margin: 50px; */
   }
-  .gogle{
- 
-   width: 50px;
-   margin-top: 0px;
-
+  #fbimg {
+    margin-left: 66px;
   }
-  .ends{
+  .gogle {
+    width: 50px;
+    margin-top: 0px;
+  }
+  .ends {
     display: none;
-  
-   }
-   .button {
-  
+  }
+  .button {
     width: 320px;
     height: 50px;
     align-self: center;
     margin-left: 0px;
-   
-   
   }
   .button-block {
     display: block;
@@ -277,24 +305,22 @@ textarea {
     justify-content: center;
     align-self: center;
   }
-  .end{
+  .end {
     margin-top: 50px;
-    margin-left: -50px;
+    /* margin-left: -50px; */
   }
- }
+}
 
+/***************************************************************/
 
-
-  /***************************************************************/
-
- /*mobile responsive*/
- @media  (max-width: 641px) {
-  body{
+/*mobile responsive*/
+@media (max-width: 770px) {
+  body {
     background-image: none;
-   }
-  .form{
+  }
+  .form {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 20px;
     box-shadow: none;
@@ -303,35 +329,38 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-   }
-  .tab-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-group {
     justify-content: center;
     align-items: center;
-    
-    margin: 0;
-   }
-  .tab-group a{
+    margin: 20px;
+  }
+  .tab-group a {
     align-self: flex-start;
-     margin: 10px;
-  
-    }
-  h2{
+    margin: 10px;
+  }
+
+  .button-block {
+    margin: 0 auto;
+  }
+
+  h2 {
     text-align: start;
-   
-     }
-  
-  .images{
+  }
+
+  .images {
     margin-left: 5px;
-   
   }
-  #fbimg{
-   margin-left:30px;
-   width: 50px;
-  }
-  .end{
-    margin-top: 50px;
-  }
-  .gogle{
+  #fbimg {
+    margin-left: 30px;
     width: 50px;
   }
- }
+  .end {
+    margin-top: 30px;
+  }
+  .gogle {
+    width: 50px;
+  }
+}
