@@ -23,7 +23,7 @@ header {
   justify-content: center;
   top: 0;
   height: 70vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-image: url(https://media.veepee.com/v1/media/ece1b44c-2e9a-4663-a99e-793e83fe1b6f);
 }
@@ -307,10 +307,7 @@ li {
   align-items: center;
   margin-top: 20px;
 }
-.buttonpanier {
-  display: flex;
-  justify-content: center;
-}
+
 
 .veeplogoo {
   flex: 1;
@@ -356,7 +353,7 @@ li {
   border-bottom: none;
   box-shadow: rgba(34, 34, 43, 0.16) 0px 3px 11px;
   background-color: white;
-  margin-right: 700px;
+  /* margin-right: 700px; */
 }
 
 h1 {
@@ -443,13 +440,118 @@ footer {
   font-size: 16px;
 }
 
-/* media queries  */
+/* Responsive Mobile */
 
-@media (max-width: 991px) {
+@media (max-width: 850px) {
+    .card{
+      margin-right: 0px;
+      width: 50%;
+    }
+  .containerr {
+    width: 90%;
+  }
+
+  .containerr img {
+    width: 100%;
+  }
+
+  #submit-button {
+    width: 90%;
+    margin: 16px auto;
+    align-self: center;
+  }
+
+  #google-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footercontainer {
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .footeritem {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footerp {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 768px) {
-}
+/* Responsive Large screen */
+@media (min-width: 1400px) {
 
-@media (max-width: 450px) {
+  #google-form {
+    width: 32vw;
+  }
+  #google-form h2 {
+    font-size: 1.8vw;
+  }
+  h3 {
+    font-size: 1.6vw;
+  }
+  p {
+    font-size: 0.8vw;
+  }
+  .haut {
+    font-size: 1vw;
+  }
+  .bas {
+    font-size: 0.7vw;
+  }
+  .no-border {
+    font-size: 18px;
+  }
+  label {
+    font-size: 18px;
+  }
+}
+@media (min-width: 2180px){
+.card{
+  width: 400px;
+  height: auto;
+}
+}
+@media (min-width: 3733px){
+  .card{
+    width: 600px;
+    height: 320px;
+  }
+  }
+  @media (max-width:853px){
+    .card{
+      width: auto;
+      height: auto;
+      margin: 20px;
+    }
+    header{
+      background-size: cover;
+      width: auto;
+    }
+     .iconsnav{
+    display: none;
+  }
+  }
+/* mini screen*/
+@media (max-width:420px) {
+  .iconsnav{
+    display: none;
+  }
+  .logoo{
+    height: auto;
+    width: 80px;
+  }
+  .veeplogoo{
+    justify-content: flex-start;
+  }
+  .card{
+    width: auto;
+    height: auto;
+    margin: 20px;
+  }
+  
 }
