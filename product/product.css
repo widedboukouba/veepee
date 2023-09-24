@@ -649,7 +649,7 @@ a:visited {
   color: rgba(5, 5, 5, 0.805);
   font-size: 24;
   border: 1px solid rgba(135, 130, 130, 0.831);
-
+  margin-top: 10px;
   cursor: pointer;
   display: block;
 }
@@ -1087,5 +1087,58 @@ h1:visited {
     min-width: unset;
     max-height: unset;
     min-height: unset;
+  }
+}
+
+/* Responsive Large screen */
+@media (min-width: 1100px) {
+  .pname {
+    font-size: 2.3vw;
+  }
+  .pinkp {
+    font-size: 2vw;
+  }
+  .btn-box h1 {
+    font-size: 1.8vw !important;
+    margin-block-start: unset;
+    margin-block-end: inherit;
+  }
+  .greenspan {
+    font-size: 1.4vw;
+  }
+  .greyp {
+    margin-top: 8px;
+    font-size: 1.3vw;
+  }
+  p {
+    font-size: 1.4vw;
+  }
+  .quantity p {
+    font-size: 1.4vw;
+  }
+  a {
+    font-size: 1vw;
+  }
+  .small-imgg {
+    width: 4vw;
+    height: 4vw;
+  }
+  .imagess {
+    width: 100%;
+  }
+  .flex-box {
+    gap: 8%;
+  }
+  .pinkbutton {
+    font-size: 1.4vw;
+    width: unset;
+    height: unset;
+    padding: 8px 32px;
+  }
+  .spann {
+    font-size: 1.2vw;
+  }
+  .navv {
+    width: 20vw;
   }
 }
