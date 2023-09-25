@@ -833,3 +833,15 @@ input {
   p {
     font-size: 1.2vw;
   }}
+
+  /*meduim screen*/
+  @media (max-width:800px) {
+    .containerbody{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .iconsnav{
+      display: none;
+    }
+    
+  }
